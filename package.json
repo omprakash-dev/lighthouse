@@ -4,7 +4,7 @@
   "description": "Learning Webdriver Io",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./auditSite.ts"
+    "start": "npx ts-node ./auditSite.ts"
   },
   "author": "Akanksha Gupta",
   "license": "",
