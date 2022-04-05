@@ -27,11 +27,11 @@ app.use(express.static('public'));
 
 
 //defining router 
-const userRoute = require('./src/services/calculateCo2/calculateCo2Router');
+const co2Route = require('./src/services/co2/co2Router');
 
 
 /* Routes */
-app.use('/user', userRoute);
+app.use('/co2', co2Route);
 
 
 __ = require('./src/helpers/globalFunctions');

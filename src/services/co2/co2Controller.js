@@ -2,7 +2,7 @@ const { auditSite } = require("../../../lighthouse/lighthouse-wrapper.js");
 
 const __ = require("../../helpers/globalFunctions");
 
-class Users {
+class Co2 {
   async calculate(req, res) {
     try {
       let urlVal = req.query.url || "";
@@ -20,5 +20,5 @@ class Users {
     }
   }
 }
-const users = new Users();
-module.exports = users;
+const co2 = new Co2();
+module.exports = co2;
