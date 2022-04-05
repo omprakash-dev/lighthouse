@@ -1,23 +1,35 @@
 {
-  "name": "lighthouse",
+  "name": "carbon-api",
   "version": "1.0.0",
-  "description": "Learning Webdriver Io",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "npx ts-node ./auditSite.ts"
+    "test": "mocha",
+    "start": "node app.js"
   },
-  "author": "Akanksha Gupta",
-  "license": "",
-  "devDependencies": {
-    "install": "^0.13.0",
-    "npm": "^7.15.1",
-    "ts-node": "^10.0.0",
-    "tslint": "^5.12.1",
-    "typescript": "^3.3.3"
+  "author": "omprakash",
+  "license": "ISC",
+  "engines": {
+    "node": "16.14.2"
   },
   "dependencies": {
-    "chrome-launcher": "^0.14.0",
-    "express": "^4.17.3",
-    "lighthouse": "^8.0.0"
+    "body-parser": "1.19.0",
+    "chalk": "2.4.2",
+    "chrome-launcher": "^0.15.0",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "helmet": "3.23.3",
+    "lighthouse": "^9.3.1",
+    "lodash": "4.17.20",
+    "moment": "2.29.1",
+    "nodemon": "^2.0.15",
+    "os": "0.1.1",
+    "website-carbon-calculator": "^1.2.7"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "Reports/*"
+    ]
   }
 }
