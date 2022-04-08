@@ -7,7 +7,7 @@ class Co2 {
     try {
       let urlVal = req.query.url || "";
       if (urlVal != "") {
-        const co2 = await auditSite(urlVal);
+        const co2 = await auditSite(decodeURI(urlVal+'?test=true'));
 
         __.out(res, 200, { co2 });
       } else {

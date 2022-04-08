@@ -12,8 +12,10 @@ const port = process.env.PORT;
 /*Express configuration*/
 app.set('port', port);
 app.use(helmet());
-app.use(cors());
-
+//app.use(cors());
+app.use(cors({
+    origin: 'https://lighthousee.herokuapp.com'
+}));
 app.use(bodyParser.json({
   limit: '50mb'
 }));
