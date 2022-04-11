@@ -14,7 +14,7 @@ app.set('port', port);
 app.use(helmet());
 //app.use(cors());
 app.use(cors({
-    origin: 'https://lighthousee.herokuapp.com'
+    origin: 'http://localhost:9090'
 }));
 app.use(bodyParser.json({
   limit: '50mb'
