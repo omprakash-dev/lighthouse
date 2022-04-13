@@ -7,7 +7,7 @@ class LightHouseWrapper {
   async auditSite(url) {
     let co2g = 0;
     console.log("url =>" + url);
-    chrome = await launch({ chromeFlags: ["--headless"] });
+    chrome = await launch({ chromeFlags: ["--headless", '--disable-gpu'] });
     let options = {
       logLevel: "info",
       output: "json",
